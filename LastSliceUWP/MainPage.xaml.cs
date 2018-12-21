@@ -48,7 +48,7 @@ namespace LastSliceUWP
 
                     // TODO: Now show your Swagger and find the solution.
 
-                    string solution = "";
+                    string solution = challengeService.Solver(puzzle);
                     string solutionResponse = await challengeService.PostSolutionToPuzzle(solution);
 
                     ResultText.Text = solutionResponse;
